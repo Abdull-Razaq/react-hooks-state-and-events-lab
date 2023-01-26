@@ -9,7 +9,7 @@ function App() {
 
   const  [ theme, setTheme] = useState(false)
 
-  const appClass = false ? "App dark" : "App light"
+  const appClass = theme ? "App dark" : "App light"
 
  function handleTheme() {
   setTheme((theme) => !theme)
